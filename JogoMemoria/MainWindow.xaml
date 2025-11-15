@@ -6,7 +6,23 @@
         xmlns:local="clr-namespace:JogoMemoria"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#FF927272">
+        <Rectangle HorizontalAlignment="Center" Height="365" Margin="0,49,0,0" Stroke="Black" VerticalAlignment="Top" Width="334" Fill="White" RenderTransformOrigin="0.494,0.419"/>
+        <Button Content="Iniciar" HorizontalAlignment="Left" Margin="287,340,0,0" VerticalAlignment="Top" FontSize="16" Width="92" Height="50"/>
+        <Button Content="Sair" HorizontalAlignment="Left" Margin="414,340,0,0" VerticalAlignment="Top" FontSize="16" Width="92" Height="50"/>
+        <Button Name="Id01" Content="" HorizontalAlignment="Left" Margin="254,100,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id01_Click"/>
+        <Button Name="Id02" Content="" HorizontalAlignment="Left" Margin="330,100,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id02_Click"/>
+        <Button Name="Id03" Content="" HorizontalAlignment="Left" Margin="407,100,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id03_Click"/>
+        <Button Name="Id04" Content="" HorizontalAlignment="Left" Margin="484,100,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id04_Click"/>
+        <Button Name="Id05" Content="" HorizontalAlignment="Left" Margin="254,171,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id05_Click"/>
+        <Button Name="Id06" Content="" HorizontalAlignment="Left" Margin="330,171,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id06_Click"/>
+        <Button Name="Id07" Content="" HorizontalAlignment="Left" Margin="407,171,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id07_Click"/>
+        <Button Name="Id08" Content="" HorizontalAlignment="Left" Margin="484,170,0,0" VerticalAlignment="Top" Height="56" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id08_Click"/>
+        <Button Name="Id09" Content="" HorizontalAlignment="Left" Margin="254,244,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id09_Click"/>
+        <Button Name="Id10" Content="" HorizontalAlignment="Left" Margin="330,244,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id10_Click"/>
+        <Button Name="Id11" Content="" HorizontalAlignment="Left" Margin="407,244,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id11_Click"/>
+        <Button Name="Id12" Content="" HorizontalAlignment="Left" Margin="485,244,0,0" VerticalAlignment="Top" Height="55" Width="56" RenderTransformOrigin="0.195,0.514" Click="Id12_Click"/>
+        <Label Content="Pontuação" HorizontalAlignment="Center" Margin="0,58,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.267,0.491" Width="88" FontWeight="Bold" FontFamily="Segoe UI Symbol"/>
 
     </Grid>
 </Window>
