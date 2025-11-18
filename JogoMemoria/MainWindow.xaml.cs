@@ -15,12 +15,14 @@ namespace JogoMemoria
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
-        public List<string> Items = new List<string>() { "Cachorro", "Cachorro", "Gato", "Gato", "Zebra", "Zebra", "Elefante", "Elefante", "Foca", "Foca", "Cavalo", "Cavalo" };
+
+        public List<string> Items = new List<string>() { "Alemanha", "Alemanha", "Brasil", "Brasil", "Chile", "Chile", "Portugal", "Portugal", "Argentina", "Argentina", "Egito", "Egito" };
 
         public List<Button> Selected = new List<Button>();
-
+        public bool Iniciar = false;
 
         public MainWindow()
         {
@@ -28,6 +30,12 @@ namespace JogoMemoria
             Random rnd = new Random();
             Items = Items.OrderBy(i => rnd.Next()).ToList();
         }
+
+        private void IniciarJogo()
+        {
+            Iniciar = true;
+        }
+
         private void Id01_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id01);
@@ -37,17 +45,17 @@ namespace JogoMemoria
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                Selected.Clear();
             }
 
         }
-
-
 
 
         private void Id02_Click(object sender, RoutedEventArgs e)
@@ -59,15 +67,14 @@ namespace JogoMemoria
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected[0].Content = "";
-                    Selected[1].Content = "";
-                    Selected.Clear();
-
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                Selected.Clear();
             }
         }
 
@@ -81,14 +88,14 @@ namespace JogoMemoria
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected[0].Content = "";
-                    Selected[1].Content = "";
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
 
             }
         }
@@ -102,14 +109,14 @@ namespace JogoMemoria
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected[0].Content = "";
-                    Selected[1].Content = "";
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -117,20 +124,20 @@ namespace JogoMemoria
         private void Id05_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id05);
-            Id01.Content = Items[4];
+            Id05.Content = Items[4];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected[0].Content = "";
-                    Selected[1].Content = "";
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -139,18 +146,20 @@ namespace JogoMemoria
         private void Id06_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id06);
-            Id01.Content = Items[5];
+            Id06.Content = Items[5];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -159,18 +168,20 @@ namespace JogoMemoria
         private void Id07_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id07);
-            Id01.Content = Items[6];
+            Id07.Content = Items[6];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -179,18 +190,20 @@ namespace JogoMemoria
         private void Id08_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id08);
-            Id01.Content = Items[7];
+            Id08.Content = Items[7];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -199,18 +212,20 @@ namespace JogoMemoria
         private void Id09_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id09);
-            Id01.Content = Items[8];
+            Id09.Content = Items[8];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -219,18 +234,20 @@ namespace JogoMemoria
         private void Id10_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id10);
-            Id01.Content = Items[9];
+            Id10.Content = Items[9];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -239,18 +256,20 @@ namespace JogoMemoria
         private void Id11_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id11);
-            Id01.Content = Items[10];
+            Id11.Content = Items[10];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
@@ -259,21 +278,27 @@ namespace JogoMemoria
         private void Id12_Click(object sender, RoutedEventArgs e)
         {
             Selected.Add(Id12);
-            Id01.Content = Items[11];
+            Id12.Content = Items[11];
 
             if (Selected.Count == 2)
             {
                 if (Selected[0].Content == Selected[1].Content)
                 {
-                    MessageBox.Show("Acertou");
+                    MessageBox.Show("Pares encontrados!");
                 }
                 else
                 {
-                    Selected.Clear();
+                    Selected[0].Content = "?";
+                    Selected[1].Content = "?";
                 }
+                    Selected.Clear();
             }
 
         }
 
+        private void btniniciar_Click(object sender, RoutedEventArgs e)
+        {
+            IniciarJogo();
+        }
     }
 }
